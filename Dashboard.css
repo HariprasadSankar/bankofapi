@@ -1,0 +1,54 @@
+/* src/Dashboard.css */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.content {
+  display: flex;
+  flex-grow: 1; /* Allow content to grow and cover full height */
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px; /* Add padding around the content */
+}
+
+.left, .middle, .right {
+  flex: 1;
+  margin: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.middle {
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.card-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
